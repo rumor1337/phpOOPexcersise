@@ -15,7 +15,7 @@
             if($amount <= 0) {
                 echo 'err';
             }
-            $this->balance = $this->balance + $amount;
+            $this->balance += $amount;
             echo "balance updated: {$this->balance}\n";
         }
 
@@ -23,7 +23,7 @@
             if($amount <= 0 || $amount > $this->balance) {
                 echo 'err';
             }
-            $this->balance = $this->balance - $amount;
+            $this->balance -= $amount;
             echo "balance updated: {$this->balance}\n";
         }
 
